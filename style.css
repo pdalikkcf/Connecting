@@ -1,4 +1,108 @@
-html {
-  height: 100%;
+/* Style the h1 (page title) */
+/* TASK 1: Style the h1 (title)
+   - Center the text. Hint: Think of the CSS property that helps with the alignment of texts.
+   - Set font to Arial style & sans-serif(default). Hint: Think of the CSS property that allows you to set a new font.
+   - Add a margin on the top of 30px;
+   - Add some color to the text. Use this hash value #2b2b2b;
+*/
+h1 {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  margin-top: 30px;
+  color: #2b2b2b;
+}
+
+
+
+/* Task 2: Card grid layout: allows 3 cards per row */
+.card-grid {
+  display: flex;
+  /* Add flex-wrap & set it as wrap, use justify-content to center it. */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+
+/* TASK 3: Call/Use the selector of "card" class & then Style it */
+
+  /* Add a border of 2px solid #e0e0e0, 
+     Add a padding of 20px, 
+     Change the background color to #fffaf0 
+     And make the text centred. */
+
+.card {
+  width: 30%;
+  min-width: 250px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fffaf0;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+}
+
+
+
+
+/* TASK 4: Style Pikachu's heading using the ID "pikachu"
+   - Set color to goldenrod
+   - Make it Bold. Hint: Search/Think about what CSS property can help to achieve this.
+   - Set the size of the font to 1.5rem;
+*/
+#pikachu {
+  color: goldenrod;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
+/* Style images */
+img {
   width: 100%;
+  border-radius: 10px;
+}
+
+/* Style buttons */
+button {
+  background-color: #ffd733;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+
+/* TASK 5: Add hover effect for button
+   - Slightly darker the yellow background on hover
+   - Change background color to this hash value on hover #f0c400;
+*/
+button:hover {
+  background-color: #f0c400;
+}
+
+/* Style alert box */
+.alert-box {
+  background-color: #d1ecf1;
+  color: #0c5460;
+  border: 1px solid #bee5eb;
+  padding: 15px;
+  width: 60%;
+  margin: 30px auto;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Make it responsive for smaller screens */
+@media screen and (max-width: 768px) {
+  .card {
+    width: 80%;
+  }
 }
